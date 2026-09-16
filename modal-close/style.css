@@ -1,0 +1,64 @@
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f3f4f6;
+        }
+
+        /* Open Modal Button */
+        .modalButton {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            background-color: #2563eb;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .modalButton:hover {
+            background-color: #1d4ed8;
+        }
+
+        /* Modal Overlay */
+        .modalContainer {
+            position: fixed;
+            inset: 0;
+            
+            display: none;
+            justify-content: center;
+            align-items: center;
+            
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        
+        /* Modal Box */
+        .modal {
+            min-height: 500px;
+            width: 90%;
+            max-width: 450px;
+            padding: 40px;
+
+            background-color: white;
+            border-radius: 12px;
+
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Show Modal */
+        .modalContainer.active {
+            display: flex;
+        }
